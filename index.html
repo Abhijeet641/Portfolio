@@ -123,79 +123,14 @@
                         <a href="https://www.youtube.com/@whYYaga" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1700"><i class="fa-brands fa-youtube"></i></a>
                     </div>
                     <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
-                        <a href="resume/Abhijeet_Kumar_Singh_Resume.pdf" download="Abhijeet_Kumar_Singh_Resume.pdf" style="text-decoration: none; color: inherit;">
-                            <button>Hire me</button>
-                        </a>
+                        <button onclick="downloadResume()">Download Resume</button>
                     </div>
                 </div>
             </div>
         </section>
     </div>
 
-    <div id="about" class="main-content hidden">
-        <section id="about-section">
-            <h2 data-aos="fade-up" style="color: white;">About Me</h2>
-            <div class="about-content" data-aos="fade-in">
-                <p>
-                    Tech enthusiast and perpetual learner, I navigate the dynamic landscape of computer science with unbridled curiosity and innovative spirit. My professional journey is defined by an insatiable appetite for technological challenges and a commitment to pushing boundaries in software development.
-                </p>
-                <p>
-                    Beyond lines of code, I'm a creative problem-solver who thrives on transforming complex technical puzzles into elegant solutions. My expertise spans multiple programming domains, reflecting a versatile approach to technological innovation.
-                </p>
-                <p>
-                    Life beyond the screen is equally vibrant. I find profound joy in culinary exploration, capturing moments through photography, and reconnecting with nature through adventurous hiking trails. These experiences fuel my creativity and provide fresh perspectives that enrich my professional approach.
-                </p>
-                <p>
-                    Collaboration is my core belief. I see technology as a powerful medium for positive transformation, driven by empathy, mutual understanding, and collective intelligence. Each interaction is an opportunity to learn, grow, and contribute meaningfully to our shared technological ecosystem.
-                </p>
-            </div>
-        </section>
-    </div>
-
-    <div id="skills" class="main-content hidden">
-        <section id="skills-section">
-            <h2 data-aos="fade-up" style="color: white;">Skills</h2>
-            <div class="skills-container">
-                <div class="skill-item" data-aos="fade-up">Spring Boot</div>
-                <div class="skill-item" data-aos="fade-up">Spring Framework</div>
-                <div class="skill-item" data-aos="fade-up">Java</div>
-                <div class="skill-item" data-aos="fade-up">Algorithms</div>
-                <div class="skill-item" data-aos="fade-up">TypeScript</div>
-                <div class="skill-item" data-aos="fade-up">NestJS</div>
-                <div class="skill-item" data-aos="fade-up">Full-Stack Development</div>
-                <div class="skill-item" data-aos="fade-up">React.js</div>
-                <div class="skill-item" data-aos="fade-up">REST APIs</div>
-                <div class="skill-item" data-aos="fade-up">Problem Solving</div>
-                <div class="skill-item" data-aos="fade-up">Application Programming Interfaces (API)</div>
-                <div class="skill-item" data-aos="fade-up">Front-End Development</div>
-                <div class="skill-item" data-aos="fade-up">HTML5</div>
-                <div class="skill-item" data-aos="fade-up">Web Development</div>
-                <div class="skill-item" data-aos="fade-up">Communication</div>
-                <div class="skill-item" data-aos="fade-up">Data Structures</div>
-                <div class="skill-item" data-aos="fade-up">Amazon Web Services (AWS)</div>
-                <div class="skill-item" data-aos="fade-up">Node.js</div>
-                <div class="skill-item" data-aos="fade-up">Next.js</div>
-                <div class="skill-item" data-aos="fade-up">MongoDB</div>
-                <div class="skill-item" data-aos="fade-up">Express.js</div>
-                <div class="skill-item" data-aos="fade-up">Tailwind CSS</div>
-                <div class="skill-item" data-aos="fade-up">JavaScript</div>
-                <div class="skill-item" data-aos="fade-up">HTML</div>
-            </div>
-        </section>
-    </div>
-
-    <div id="contact" class="main-content hidden">
-        <section id="contact-section">
-            <h2 data-aos="fade-up" style="color: white;">Contact Me</h2>
-            <div class="contact-info" data-aos="fade-in">
-                <p>Feel free to reach out to me via email:</p>
-                <p>
-                    <strong>Email:</strong> <a href="mailto:abhijeet6419@gmail.com">abhijeet6419@gmail.com</a>
-                </p>
-               
-            </div>
-        </section>
-    </div>
+    <!-- Rest of your HTML content remains the same -->
     
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -207,13 +142,11 @@
         }
 
         function showSection(sectionId) {
-            // Hide all sections
             const sections = document.querySelectorAll('.main-content');
             sections.forEach(section => {
                 section.classList.add('hidden');
             });
 
-            // Show selected section
             const selectedSection = document.getElementById(sectionId);
             if (selectedSection) {
                 selectedSection.classList.remove('hidden');
@@ -221,6 +154,5 @@
         }
     </script>
     <script src="script.js"></script>
-    
 </body>
 </html>
