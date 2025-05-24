@@ -16,12 +16,12 @@ const texts = [
 let speed = 100;
 const textElements = document.querySelector(".typewriter-text");
 let textIndex = 0;
-let charcterIndex = 0;
+let characterIndex = 0;
 
 function typeWriter(){
-    if (charcterIndex < texts[textIndex].length){
-        textElements.innerHTML += texts[textIndex].charAt(charcterIndex);
-        charcterIndex++;
+    if (characterIndex < texts[textIndex].length){
+        textElements.innerHTML += texts[textIndex].charAt(characterIndex);
+        characterIndex++;
         setTimeout(typeWriter, speed);
     }
     else{
@@ -36,7 +36,9 @@ function eraseText(){
     }
     else{
         textIndex = (textIndex + 1) % texts.length;
-        charcterIndex = 0;
+        characterIndex = 0;
         setTimeout(typeWriter, 500)
     }
 }
+
+typeWriter();
